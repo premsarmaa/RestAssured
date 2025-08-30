@@ -7,7 +7,7 @@ import io.restassured.path.json.JsonPath;
 
 public class SumValidation {
 
-	//instead of using public static void main , we will use testNG to run this
+	//instead of using public static void main , we will use testNG annotation run this
 	@Test
 	public void sumOfCourses() {
 		
@@ -23,6 +23,6 @@ public class SumValidation {
 			sum+=+price*copies;
 		}
 		System.out.println(sum);
-		Assert.assertEquals(sum, purchaseAmount);
+		Assert.assertEquals(sum, purchaseAmount);//using testNG assertion
 	}
 }
