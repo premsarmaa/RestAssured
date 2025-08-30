@@ -35,7 +35,7 @@ public class Basics {
 				+ "")
 		.when().post("maps/api/place/add/json?key =qaclick123")
 		.then().log().all().assertThat().statusCode(200);
-		
+	//	
 	}
 
 }
